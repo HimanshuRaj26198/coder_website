@@ -753,7 +753,7 @@ export default function ContactUs() {
             <section className="relative bg-slate-900 text-white py-24 sm:py-32 px-4 sm:px-6 lg:px-8">
                 <div className="absolute inset-0 bg-grid-slate-800 [mask-image:linear-gradient(to_bottom,white,transparent)]"></div>
                 <div className="relative container mx-auto text-center">
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
                         Get in Touch
                     </h1>
                     <p className="text-lg sm:text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
