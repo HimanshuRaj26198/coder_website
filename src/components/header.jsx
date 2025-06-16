@@ -374,10 +374,10 @@ const courses = [
 
 const navLinks = [
     { name: "About", href: "/about", icon: <Users className="h-5 w-5 lg:hidden" /> },
-    { name: "Pricing", href: "/pricing", icon: <DollarSign className="h-5 w-5 lg:hidden" /> },
+    { name: "Pricing", href: "/plans&pricing", icon: <DollarSign className="h-5 w-5 lg:hidden" /> },
     { name: "Careers", href: "/careers", icon: <Briefcase className="h-5 w-5 lg:hidden" /> },
-    { name: "Blog", href: "/blog", icon: <MessageSquare className="h-5 w-5 lg:hidden" /> },
-    { name: "Support", href: "/help-support", icon: <LifeBuoy className="h-5 w-5 lg:hidden" /> },
+    { name: "Blog", href: "/blogs", icon: <MessageSquare className="h-5 w-5 lg:hidden" /> },
+    { name: "Support", href: "/help&support", icon: <LifeBuoy className="h-5 w-5 lg:hidden" /> },
 ]
 
 export default function Navbar() {
