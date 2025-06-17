@@ -338,37 +338,37 @@ const courses = [
         name: "Full Stack Web Development",
         description: "Master React, Node.js, and modern web technologies",
         icon: <Globe className="h-5 w-5 text-sky-500" />,
-        href: "/courses/full-stack",
+        href: "/courses",
     },
     {
         name: "Frontend Development",
         description: "React, Vue.js, and modern frontend frameworks",
         icon: <Code className="h-5 w-5 text-emerald-500" />,
-        href: "/courses/frontend",
+        href: "/courses",
     },
     {
         name: "Backend Development",
         description: "Node.js, Python, and server-side programming",
         icon: <Database className="h-5 w-5 text-amber-500" />,
-        href: "/courses/backend",
+        href: "/courses",
     },
     {
         name: "Mobile App Development",
         description: "React Native and cross-platform development",
         icon: <Smartphone className="h-5 w-5 text-purple-500" />,
-        href: "/courses/mobile",
+        href: "/courses",
     },
     {
         name: "Cloud Computing & DevOps",
         description: "AWS, Docker, Kubernetes, and deployment",
         icon: <Cloud className="h-5 w-5 text-rose-500" />,
-        href: "/courses/devops",
+        href: "/courses",
     },
     {
         name: "AWS Certified Solutions Architect",
         description: "Prepare for the AWS Solutions Architect exam",
         icon: <ShieldCheck className="h-5 w-5 text-teal-500" />,
-        href: "/courses/aws-solutions-architect",
+        href: "/courses",
     },
 ]
 
@@ -439,7 +439,7 @@ export default function Navbar() {
     }, [isMobileMenuOpen])
 
     return (
-        <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <header className="sticky top-0 z-999 bg-gray-50  shadow-sm">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex h-20 items-center justify-between">
                     <div className="flex items-center">
@@ -461,7 +461,7 @@ export default function Navbar() {
                                 onClick={() => setIsCoursesDropdownOpen(!isCoursesDropdownOpen)}
                                 onMouseEnter={() => setIsCoursesDropdownOpen(true)}
                                 onMouseLeave={() => setIsCoursesDropdownOpen(false)}
-                                className="flex items-center rounded-md px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors"
+                                className="flex items-center rounded-md px-4 py-2 text-sm font-medium text-gray-700  hover:text-sky-600 transition-colors"
                             >
                                 Courses
                                 <ChevronDown
@@ -509,7 +509,7 @@ export default function Navbar() {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className="rounded-md px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors"
+                                className="rounded-md px-4 py-2 text-sm font-medium text-gray-700 hover:text-sky-600  transition-colors"
                             >
                                 {link.name}
                             </Link>
@@ -520,7 +520,7 @@ export default function Navbar() {
                     <div className="hidden lg:flex items-center space-x-3">
                         <Link
                             href="/login"
-                            className="rounded-md px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors"
+                            className="rounded-md px-4 py-2 text-sm font-medium text-gray-700  hover:text-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors"
                         >
                             Login
                         </Link>
@@ -556,7 +556,7 @@ export default function Navbar() {
                 ref={mobileMenuRef}
                 className={`lg:hidden fixed inset-y-0 right-0 z-40 w-full overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 transition-transform duration-300 ease-in-out transform ${isMobileMenuOpen ? "translate-x-0 shadow-2xl" : "translate-x-full"
                     }`}
-                style={{ paddingTop: "5rem" }} // Add padding to account for header height
+                 // Add padding to account for header height
             >
                 <div className="p-6">
                     <div className="flow-root">
